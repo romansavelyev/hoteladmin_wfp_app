@@ -5,7 +5,7 @@ EconomRoom::EconomRoom()
 
 }
 
-EconomRoom::EconomRoom(QString &roomClass,int &amountOfPeople, double &priceForRoom):
+EconomRoom::EconomRoom(QString roomClass,int amountOfPeople, double priceForRoom):
     mRoomClass{roomClass},
     mAmountOfPeople{amountOfPeople},
     mPriceForRoom{priceForRoom}

@@ -6,7 +6,7 @@ class EconomRoom : public HotelRoom
 {
 public:
     EconomRoom();
-    EconomRoom(QString &roomClass,int &amountOfPeople, double &priceForRoom);
+    EconomRoom(QString roomClass,int amountOfPeople, double priceForRoom);
     double moneyForRoom();
     virtual void showMoneyForRoom() override;
 private:

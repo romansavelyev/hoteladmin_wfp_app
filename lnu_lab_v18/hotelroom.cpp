@@ -5,7 +5,7 @@ HotelRoom::HotelRoom()
 
 }
 
-HotelRoom::HotelRoom(QString &roomClass,int &amountOfPeople, double &priceForRoom):
+HotelRoom::HotelRoom(QString roomClass,int amountOfPeople, double priceForRoom):
     mRoomClass{roomClass},
     mAmountOfPeople{amountOfPeople},
     mPriceForRoom{priceForRoom}

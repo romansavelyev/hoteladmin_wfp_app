@@ -5,7 +5,7 @@ Client::Client()
 
 }
 
-Client::Client(int &passportData, int &accomodationDate, int &checkOutDate, int &roomNumber):
+Client::Client(int passportData, int accomodationDate, int checkOutDate, int roomNumber):
     mPassportData{passportData},
     mAccomodationDate{accomodationDate},
     mCheckOutDate{checkOutDate},

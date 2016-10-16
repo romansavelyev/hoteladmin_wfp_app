@@ -10,7 +10,7 @@ class HotelRoom
 {
 public:
     HotelRoom();
-    HotelRoom(QString &roomClass,int &amountOfPeople, double &priceForRoom);
+    HotelRoom(QString roomClass,int amountOfPeople, double priceForRoom);
     ~HotelRoom();
 
     virtual void showMoneyForRoom() = 0;

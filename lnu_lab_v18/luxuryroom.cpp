@@ -5,7 +5,7 @@ LuxuryRoom::LuxuryRoom()
 
 }
 
-LuxuryRoom::LuxuryRoom(QString &roomClass,int &amountOfPeople, double &priceForRoom):
+LuxuryRoom::LuxuryRoom(QString roomClass,int amountOfPeople, double priceForRoom):
     mRoomClass{roomClass},
     mAmountOfPeople{amountOfPeople},
     mPriceForRoom{priceForRoom}

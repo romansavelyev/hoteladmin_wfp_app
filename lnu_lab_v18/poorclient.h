@@ -7,7 +7,7 @@ class PoorClient : public Client
 {
 public:
     PoorClient();
-    PoorClient(int &passportData,int &accomodationDate, int &checkOutDate, int &roomNumber);
+    PoorClient(int passportData,int accomodationDate, int checkOutDate, int roomNumber);
     virtual void amountOfMoney() override;
 };
 

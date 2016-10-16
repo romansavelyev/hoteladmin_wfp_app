@@ -11,7 +11,7 @@ class Client
 {
 public:
     Client();
-    Client(int &passportData,int &accomodationDate, int &checkOutDate, int &roomNumber);
+    Client(int passportData,int accomodationDate, int checkOutDate, int roomNumber);
 
     ~Client();
 

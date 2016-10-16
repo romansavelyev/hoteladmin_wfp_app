@@ -7,7 +7,7 @@ class LuxuryRoom : public HotelRoom
 {
 public:
     LuxuryRoom();
-    LuxuryRoom(QString &roomClass,int &amountOfPeople, double &priceForRoom);
+    LuxuryRoom(QString roomClass,int amountOfPeople, double priceForRoom);
     double moneyForRoom();
     virtual void showMoneyForRoom() override;
 

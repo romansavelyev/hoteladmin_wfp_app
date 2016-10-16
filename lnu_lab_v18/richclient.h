@@ -7,7 +7,7 @@ class RichClient : public Client
 {
 public:
     RichClient();
-    RichClient(int &passportData,int &accomodationDate, int &checkOutDate, int &roomNumber);
+    RichClient(int passportData,int accomodationDate, int checkOutDate, int roomNumber);
     virtual void amountOfMoney() override;
 };
 
