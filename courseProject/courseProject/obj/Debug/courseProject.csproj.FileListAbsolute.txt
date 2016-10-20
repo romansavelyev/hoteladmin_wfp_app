@@ -1,0 +1,16 @@
+D:\С++\lnu_project\courseProject\courseProject\bin\Debug\courseProject.exe.config
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\courseProject.csprojResolveAssemblyReference.cache
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\MainWindow.baml
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\MainWindow.g.cs
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\App.g.cs
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\courseProject_MarkupCompile.cache
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\courseProject.g.resources
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\courseProject.Properties.Resources.resources
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\courseProject.csproj.GenerateResource.Cache
+D:\С++\lnu_project\courseProject\courseProject\bin\Debug\courseProject.exe
+D:\С++\lnu_project\courseProject\courseProject\bin\Debug\courseProject.pdb
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\courseProject.exe
+D:\С++\lnu_project\courseProject\courseProject\obj\Debug\courseProject.pdb
+D:\C#\lnu_project\courseProject\courseProject\bin\Debug\courseProject.exe.config
+D:\C#\lnu_project\courseProject\courseProject\obj\Debug\courseProject.exe
+D:\C#\lnu_project\courseProject\courseProject\obj\Debug\courseProject.pdb
