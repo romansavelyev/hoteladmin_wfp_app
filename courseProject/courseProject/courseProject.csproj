@@ -53,10 +53,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CoupleClients.cs" />
-    <Compile Include="FamelyApartment.cs" />
-    <Compile Include="GroupOfClients.cs" />
-    <Compile Include="SingleClient.cs" />
+    <Compile Include="model\CoupleClients.cs" />
+    <Compile Include="model\FamelyApartment.cs" />
+    <Compile Include="model\GroupOfClients.cs" />
+    <Compile Include="model\SingleClient.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -65,11 +65,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="LoftApartment.cs" />
-    <Compile Include="HotelRoom.cs" />
-    <Compile Include="Client.cs" />
-    <Compile Include="Hotel.cs" />
-    <Compile Include="SimpleApartment.cs" />
+    <Compile Include="model\LoftApartment.cs" />
+    <Compile Include="model\HotelRoom.cs" />
+    <Compile Include="model\Client.cs" />
+    <Compile Include="model\Hotel.cs" />
+    <Compile Include="model\SimpleApartment.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

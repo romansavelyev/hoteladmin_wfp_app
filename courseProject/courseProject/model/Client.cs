@@ -18,8 +18,8 @@ namespace courseProject
        public virtual double showAmoutOfMoney() { return AmountOfMoney; }
        public int PassportData { get; set; }
        public double AmountOfMoney { get; set; }
-       private int AccomodationDate { get; set; }
-       private int CheckOutDate{get; set; }
-       private int RoomNumber { get; set; }
+       public int AccomodationDate { get; set; }
+       public int CheckOutDate{get; set; }
+       public int RoomNumber { get; set; }
     }
 }

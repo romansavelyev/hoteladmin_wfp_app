@@ -1,5 +1,5 @@
 # lnu_project
-simple project for LNU.
+project for LNU.
 
 № 18
 Розробка інформаційної системи “Адміністратор готелю”.
