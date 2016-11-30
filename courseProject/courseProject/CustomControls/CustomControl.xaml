@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="courseProject.CustomControls.CustomControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:courseProject.CustomControls"
+             mc:Ignorable="d" Height="296.383" Width="571.52">
+    <Grid Background="Wheat" Margin="0,10,10,10" HorizontalAlignment="Right" Width="543">
+        <DataGrid HorizontalAlignment="Left" VerticalAlignment="Top" Height="152" Width="465" ItemsSource="{Binding}" Name="dtGrid" Margin="27,10,0,0" />
+        <Button x:Name="ConnBtn" Content="Connect" HorizontalAlignment="Left" Margin="27,183,0,0" VerticalAlignment="Top" Width="110" Height="25" Click="ConnBtn_Click" />
+    </Grid>
+</UserControl>

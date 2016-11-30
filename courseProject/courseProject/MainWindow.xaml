@@ -1,23 +1,14 @@
-﻿<Window x:Class="courseProject.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid x:Name="Grid1">
-        <ListView Name="ListViewHotelRoom" Margin="4,20,40,100" ItemTemplate="{DynamicResource HotelTemplate}" ItemsSource="{Binding Path=Table}">
-            <ListView.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="Gray" Offset="0"/>
-                </LinearGradientBrush>
-            </ListView.Background>
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Path=id}"/>
-                    <GridViewColumn Header="RoomClass" DisplayMemberBinding="{Binding Path=roomclass}"/>
-                    <GridViewColumn Header="AmountOfPeople" DisplayMemberBinding="{Binding Path=amountofpeople}"/>
-                    <GridViewColumn Header="priceforroom" DisplayMemberBinding="{Binding Path=priceforroom}"/>
-                    
-                </GridView>
-            </ListView.View>
-        </ListView>
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:courseProject"
+        xmlns:CustomControls="clr-namespace:courseProject.CustomControls" x:Class="courseProject.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="468" Width="709">
+    <Grid Margin="0,0,28,0">
+        <CustomControls:CustomControl HorizontalAlignment="Left"
+                                      Margin="75,10,0,40" Height="Auto" Width="562" RenderTransformOrigin="0.427,0.524"/>
     </Grid>
 </Window>
