@@ -18,28 +18,65 @@ using MySql.Data.MySqlClient;
 
 namespace courseProject.CustomControls
 {
-    /// <summary>
-    /// Interaction logic for CustomControl.xaml
-    /// </summary>
+
     public partial class CustomControl : UserControl
     {
         public CustomControl()
         {
             InitializeComponent();
         }
+        public  static string connStr = "SERVER=localhost;DATABASE=test;UID=root;PASSWORD=root;";
+        public MySqlConnection con = new MySqlConnection(connStr);
+        public DataTable dt = new DataTable();
 
         private void ConnBtn_Click(object sender, RoutedEventArgs e)
         {
-            string connStr = "SERVER=localhost;DATABASE=test;UID=root;PASSWORD=root;";
-            MySqlConnection con = new MySqlConnection(connStr);
-            MySqlCommand cmd = new MySqlCommand("select * from test.people", con);
-            con.Open();
-            DataTable dt = new DataTable();
-            dt.Load(cmd.ExecuteReader());
+            try
+            {            
+                con.Open();
+                dbStatusLbl.Content = "Connection is open now!";
+                //MessageBox.Show("Connection is open now!");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void ShowBtn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("select * from test.people", con);
+                dt.Load(cmd.ExecuteReader());
+                dtGrid.DataContext = dt;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void DiscBtn_Click(object sender, RoutedEventArgs e)
+        {
             con.Close();
+            dbStatusLbl.Content = "Connection is closed!";
+       
+        }
 
-            dtGrid.DataContext = dt;
-
+        private void Select2Bnt_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("select * from test.Hotels", con);
+                dt.Load(cmd.ExecuteReader());
+                dtGrid.DataContext = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

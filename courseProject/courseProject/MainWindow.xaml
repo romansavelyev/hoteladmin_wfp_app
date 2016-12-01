@@ -6,9 +6,12 @@
         xmlns:local="clr-namespace:courseProject"
         xmlns:CustomControls="clr-namespace:courseProject.CustomControls" x:Class="courseProject.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="468" Width="709">
-    <Grid Margin="0,0,28,0">
-        <CustomControls:CustomControl HorizontalAlignment="Left"
-                                      Margin="75,10,0,40" Height="Auto" Width="562" RenderTransformOrigin="0.427,0.524"/>
+        Title="MainWindow" Height="468" Width="757">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="733*"/>
+        </Grid.ColumnDefinitions>
+        <CustomControls:CustomControl HorizontalAlignment="Left" Height="417" Width="727" RenderTransformOrigin="0.427,0.524" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="10,10,0,0"/>
     </Grid>
 </Window>
