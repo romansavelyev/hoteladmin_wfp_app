@@ -10,8 +10,10 @@
     <Grid Margin="0,0,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="14*"/>
-            <ColumnDefinition Width="733*"/>
+            <ColumnDefinition Width="726*"/>
+            <ColumnDefinition Width="7*"/>
         </Grid.ColumnDefinitions>
-        <CustomControls:CustomControl HorizontalAlignment="Left" Height="417" Width="727" RenderTransformOrigin="0.427,0.524" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <CustomControls:DataBaseGrid HorizontalAlignment="Left" Height="387" Width="747" RenderTransformOrigin="0.427,0.524" Grid.ColumnSpan="3" VerticalAlignment="Top" Margin="0,50,0,0"/>
+        <Menu HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="747" Grid.ColumnSpan="3"/>
     </Grid>
 </Window>

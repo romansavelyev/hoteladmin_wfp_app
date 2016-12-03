@@ -56,14 +56,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CustomControls\CustomControl.xaml.cs">
-      <DependentUpon>CustomControl.xaml</DependentUpon>
+    <Compile Include="CustomControls\DataBaseGrid.xaml.cs">
+      <DependentUpon>DataBaseGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\GuestSettlement.xaml.cs">
+      <DependentUpon>GuestSettlement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="logic\AddOn.cs" />
+    <Compile Include="logic\GuestSettlement.cs" />
     <Compile Include="model\CoupleClients.cs" />
     <Compile Include="model\FamelyApartment.cs" />
     <Compile Include="model\GroupOfClients.cs" />
     <Compile Include="model\SingleClient.cs" />
-    <Page Include="CustomControls\CustomControl.xaml">
+    <Page Include="CustomControls\DataBaseGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\GuestSettlement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,6 +122,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

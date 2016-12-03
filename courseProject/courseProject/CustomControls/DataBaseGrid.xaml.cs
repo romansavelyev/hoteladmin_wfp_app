@@ -19,9 +19,9 @@ using MySql.Data.MySqlClient;
 namespace courseProject.CustomControls
 {
 
-    public partial class CustomControl : UserControl
+    public partial class DataBaseGrid : UserControl
     {
-        public CustomControl()
+        public DataBaseGrid()
         {
             InitializeComponent();
         }
