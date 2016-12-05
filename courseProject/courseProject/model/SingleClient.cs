@@ -9,6 +9,12 @@ namespace courseProject
     class SingleClient : Client
     {
         public SingleClient() { }
+        public SingleClient(int passportData, int accomodationDate, int checkOutDate, int roomNumber,bool hasPet)
+            :base()
+        {
+            hasPet = HasPet;
+        }
+
 
         public bool HasPet { set; get; }
 

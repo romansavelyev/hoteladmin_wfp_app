@@ -15,6 +15,15 @@ namespace courseProject
 
        public Client(){ }
 
+       public Client(int passportData, int accomodationDate, int checkOutDate, int roomNumber)
+       {
+           passportData = PassportData;
+           accomodationDate = AccomodationDate;
+           checkOutDate = CheckOutDate;
+           roomNumber = RoomNumber;
+       }
+
+
        public virtual double showAmoutOfMoney() { return AmountOfMoney; }
        public int PassportData { get; set; }
        public double AmountOfMoney { get; set; }

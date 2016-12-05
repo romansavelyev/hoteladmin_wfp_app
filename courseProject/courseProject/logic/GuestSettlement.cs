@@ -28,24 +28,24 @@ namespace courseProject.logic
 
         private void PostUser_Ok_Button_Click(object sender, RoutedEventArgs e)
         {
-            var takenFilmNames = mGuestSettlement.clientSettle_SelectedRoom_ListBox.SelectedItems.OfType<string>();
-            HashSet<HotelRoom> SelectedRoom = new HashSet<HotelRoom>();
+            //var takenFilmNames = mGuestSettlement.clientSettle_SelectedRoom_ListBox.SelectedItems.OfType<string>();
+            //HashSet<HotelRoom> SelectedRoom = new HashSet<HotelRoom>();
 
-            foreach (var item in takenFilmNames)
-            {
-                takenFilms.Add(_uof.Films.Get().Where(x => x.Name == item).First());
-            }
+            //foreach (var item in takenFilmNames)
+            //{
+            //    takenFilms.Add(_uof.Films.Get().Where(x => x.Name == item).First());
+            //}
 
             try
             {
-                Client CModel new Client
-                {
-                    AccomodationDate = mGuestSettlement.clientSettle_AccomodationDate_DatePicker.SelectedDate,
-                    CheckOutDate = mGuestSettlement.clientSettle_LastName_DatePicker.SelectedDate,
-                    PassportData = mGuestSettlement.clientSettle_PassportData_TextBox.Text,
-                    RoomNumber = mGuestSettlement.clientSettle_RoomNumber_TextBox.Text
+                //Client CModel new Client
+                //{
+                //    AccomodationDate = mGuestSettlement.clientSettle_AccomodationDate_DatePicker.SelectedDate,
+                //    CheckOutDate = mGuestSettlement.clientSettle_LastName_DatePicker.SelectedDate,
+                //    PassportData = mGuestSettlement.clientSettle_PassportData_TextBox.Text,
+                //    RoomNumber = mGuestSettlement.clientSettle_RoomNumber_TextBox.Text
                    
-                };
+                //};
 
         
 
@@ -69,26 +69,26 @@ namespace courseProject.logic
 
         private void PostFilm_Submit_Button_Click(object sender, RoutedEventArgs e)
         {
-            var selectedActorFullNames = mGuestSettlement.roomSettle_Clients_ListBox.SelectedItems.OfType<string>().ToList();
+            //var selectedActorFullNames = mGuestSettlement.roomSettle_Clients_ListBox.SelectedItems.OfType<string>().ToList();
 
 
-            foreach (var item in selectedActorFullNames)
-            {
-                string[] fName_lName = item.Split(' ');
-                string firstName = fName_lName[0];
-                string lastName = fName_lName[1];
-                selectedActors.Add(_uof.Actors.Get().Where(x => x.FirstName == firstName && x.LastName == lastName).First());
-            }
+            //foreach (var item in selectedActorFullNames)
+            //{
+            //    string[] fName_lName = item.Split(' ');
+            //    string firstName = fName_lName[0];
+            //    string lastName = fName_lName[1];
+            //    selectedActors.Add(_uof.Actors.Get().Where(x => x.FirstName == firstName && x.LastName == lastName).First());
+            //}
 
             try
             {
-                HotelRoom RModel = new HotelRoom
-                {
-                    RoomClass = mGuestSettlement.roomSettle_RoomClass_TextBox.Text,
-                    AmountOfPeople = mGuestSettlement.roomSettle_NumOfPeople_TextBox.Text,
-                    PriceForRoom = mGuestSettlement.roomSettle_PriceForRoom_TextBox.Text
+                //HotelRoom RModel = new HotelRoom
+                //{
+                //    RoomClass = mGuestSettlement.roomSettle_RoomClass_TextBox.Text,
+                //    AmountOfPeople = mGuestSettlement.roomSettle_NumOfPeople_TextBox.Text,
+                //    PriceForRoom = mGuestSettlement.roomSettle_PriceForRoom_TextBox.Text
               
-                };
+                //};
 
                 //if (PostHelper.IsModelValid(model))
                 //{
@@ -107,15 +107,15 @@ namespace courseProject.logic
             }
         }
 
-        private void PostTabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (!(sender is TabControl))
-                return;
-            //Debug.WriteLine(((sender as TabControl).SelectedItem as TabItem).Header);
-            string TabulateH = ((sender as TabControl).SelectedItem as TabItem).Header.ToString();
+        //private void PostTabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    if (!(sender is TabControl))
+        //        return;
+        //    //Debug.WriteLine(((sender as TabControl).SelectedItem as TabItem).Header);
+        //    string TabulateH = ((sender as TabControl).SelectedItem as TabItem).Header.ToString();
 
-            mGuestSettlement.clientSettle_SelectedRoom_ListBox.Items.Clear();
-            mGuestSettlement.postFilm_Clients_ListBox.Items.Clear();
+        //    mGuestSettlement.clientSettle_SelectedRoom_ListBox.Items.Clear();
+        //    mGuestSettlement.postFilm_Clients_ListBox.Items.Clear();
 
         //    switch (TabHeader)
         //    {
@@ -135,15 +135,15 @@ namespace courseProject.logic
         //        default:
         //            break;
         //    }
-        }
-        private void clientSettle_SelectedRoom_ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            e.Handled = true;
-        }
-        private void roomSettle_Clients_ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            e.Handled = true;
-        }
+        //}
+        //private void clientSettle_SelectedRoom_ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    e.Handled = true;
+        //}
+        //private void roomSettle_Clients_ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    e.Handled = true;
+        //}
   
     }
 }

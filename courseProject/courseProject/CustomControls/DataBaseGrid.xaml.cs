@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data;
 using MySql.Data.MySqlClient;
+using courseProject.logic;
 
 
 namespace courseProject.CustomControls
@@ -21,6 +22,9 @@ namespace courseProject.CustomControls
 
     public partial class DataBaseGrid : UserControl
     {
+        private ClientModel mClientModel;
+        private HotelRoomModel mHotelRoomHotel;
+
         public DataBaseGrid()
         {
             InitializeComponent();

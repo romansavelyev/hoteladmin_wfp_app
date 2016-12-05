@@ -63,7 +63,11 @@
       <DependentUpon>GuestSettlement.xaml</DependentUpon>
     </Compile>
     <Compile Include="logic\AddOn.cs" />
+    <Compile Include="logic\ClientModel.cs" />
+    <Compile Include="logic\DBcontroler.cs" />
     <Compile Include="logic\GuestSettlement.cs" />
+    <Compile Include="logic\HotelRoomModel.cs" />
+    <Compile Include="logic\Settlement.cs" />
     <Compile Include="model\CoupleClients.cs" />
     <Compile Include="model\FamelyApartment.cs" />
     <Compile Include="model\GroupOfClients.cs" />

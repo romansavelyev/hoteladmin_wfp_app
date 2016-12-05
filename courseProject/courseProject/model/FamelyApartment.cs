@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace courseProject
 {
-    class FamelyRoom : HotelRoom
+    class FamilyApartment : HotelRoom
     {
-        public FamelyRoom() { }
+        public FamilyApartment() { }
+
+        public FamilyApartment(string roomClass, int amountOfPeople, double priceForRoom, int numberOfBeds,
+            double priceForChildRoom, bool hasChildRoom):base()
+        {
+            numberOfBeds = NumberOfBeds;
+            priceForChildRoom = PriceForChildRoom;
+            hasChildRoom = HasChildRoom;
+        }
 
         public int NumberOfBeds { set; get; }
         public double PriceForChildRoom { set; get; }

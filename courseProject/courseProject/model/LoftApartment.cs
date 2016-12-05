@@ -9,6 +9,11 @@ namespace courseProject
     class LoftApartment : HotelRoom
     {
         public LoftApartment() { }
+        public LoftApartment(string roomClass, int amountOfPeople, double priceForRoom, int numberOfRooms)
+            :base()
+        {
+            numberOfRooms = NumberOfRooms;
+        }
 
         public int NumberOfRooms { set; get; }
 

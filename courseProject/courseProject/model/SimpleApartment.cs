@@ -9,13 +9,20 @@ namespace courseProject
     class SimpleApartment : HotelRoom
     {
         public SimpleApartment() { }
+        public SimpleApartment(string roomClass, int amountOfPeople, double priceForRoom, bool isVip, 
+            double priceForBonusDinner, double priceForVipRoom): base()
+        {
+            isVip = IsVip;
+            priceForBonusDinner = PriceForBonusDinner;
+            priceForVipRoom = PriceForVipRoom;
+        }
 
-        public bool isVip { set; get; }
+        public bool IsVip { set; get; }
         public double PriceForBonusDinner { set; get; }
         public double PriceForVipRoom { set; get; }
         public double getPriceForBonusDinner()
         {
-            if (isVip == true)
+            if (IsVip == true)
             {
                 return PriceForBonusDinner + PriceForVipRoom;
             }

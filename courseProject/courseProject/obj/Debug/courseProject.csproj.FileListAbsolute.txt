@@ -44,7 +44,6 @@ C:\Users\user\Desktop\lnu_project\courseProject\courseProject\obj\Debug\Generate
 D:\C#\lnu_project\courseProject\courseProject\bin\Debug\MySql.Data.dll
 D:\C#\lnu_project\courseProject\courseProject\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\C#\lnu_project\courseProject\courseProject\obj\Debug\courseProject_MarkupCompile.lref
-D:\C#\lnu_project\courseProject\courseProject\obj\Debug\courseProject.csprojResolveAssemblyReference.cache
 D:\C#\lnu_project\courseProject\courseProject\obj\Debug\CustomControls\GuestSettlement.baml
 D:\C#\lnu_project\courseProject\courseProject\obj\Debug\CustomControls\DataBaseGrid.g.cs
 D:\C#\lnu_project\courseProject\courseProject\obj\Debug\CustomControls\GuestSettlement.g.cs
