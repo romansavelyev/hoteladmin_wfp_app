@@ -48,3 +48,4 @@ D:\C#\lnu_project\courseProject\courseProject\obj\Debug\CustomControls\GuestSett
 D:\C#\lnu_project\courseProject\courseProject\obj\Debug\CustomControls\DataBaseGrid.g.cs
 D:\C#\lnu_project\courseProject\courseProject\obj\Debug\CustomControls\GuestSettlement.g.cs
 D:\C#\lnu_project\courseProject\courseProject\obj\Debug\CustomControls\DataBaseGrid.baml
+D:\C#\lnu_project\courseProject\courseProject\obj\Debug\courseProject.csprojResolveAssemblyReference.cache

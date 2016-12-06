@@ -9,20 +9,20 @@ namespace courseProject.logic
     class ClientModel
     {
         private List<Client> mClientList;
-        private List<Client> ClientList
+        public List<Client> ClientList
         {
             get
             {
                 return mClientList;
             }
-        set{}
+        set{ }
         }
 
         public ClientModel() { }
 
         public ClientModel(List<Client> clientList)
         {
-            clientList = ClientList;
+            ClientList = clientList;
         }
     }
 }

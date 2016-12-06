@@ -45,7 +45,7 @@ namespace courseProject.logic
             }
         }
 
-        public List<HotelRoom> showHotelRoomList(string option)
+        public List<HotelRoom> showHotelRoomList()
         {
             MySqlCommand cmd = new MySqlCommand("select * from test.HotelRoom");
 
@@ -55,10 +55,12 @@ namespace courseProject.logic
                 {
                     HotelRoom room;
                     //TODO
-                    int a;
-                    switch (option)
+                    Random rand = new Random();
+                    int rng =  rand.Next(1, 4);
+                    switch (rng)
                     {
-                        case "Simple Apartment":
+                        case 1:
+                        //case "Simple Apartment":
                             {
                                 room = new SimpleApartment(dReader["roomClass"].ToString(),
                             Int32.Parse(dReader["amountOfPeople"].ToString()), Int32.Parse(dReader["priceForRoom"].ToString()),
@@ -66,14 +68,16 @@ namespace courseProject.logic
                             Double.Parse(dReader["priceForVipRoom"].ToString()));
                                 break;
                             }
-                        case "Loft Apartment":
+                       // case "Loft Apartment":
+                        case 2:
                             {
                                 room = new LoftApartment(dReader["roomClass"].ToString(),
                             Int32.Parse(dReader["amountOfPeople"].ToString()), Int32.Parse(dReader["priceForRoom"].ToString()),
                             Int32.Parse(dReader["numberOfRooms"].ToString()));
                                 break;
                             }
-                        case "Family Apartment":
+                        //case "Family Apartment":
+                        case 3:
                             {
                                 room = new FamilyApartment(dReader["roomClass"].ToString(),
                             Int32.Parse(dReader["amountOfPeople"].ToString()), Int32.Parse(dReader["priceForRoom"].ToString()),
@@ -95,7 +99,7 @@ namespace courseProject.logic
             }
             return mHotelRoomList;
         }
-        public List<Client> showClientList(string option)
+        public List<Client> showClientList()
         {
             MySqlCommand cmd = new MySqlCommand("select * from test.Client");
 
@@ -105,24 +109,28 @@ namespace courseProject.logic
                 {
                     Client client;
                     //TODO
-
-                    switch (option)
+                    Random rand = new Random();
+                    int rng = rand.Next(1, 4);
+                    switch (rng)
                     {
-                        case "Single Client":
+                        case 1:
+                        //case "Single Client":
                             {
                                 client = new SingleClient(Int32.Parse(dReader["passportData"].ToString()), Int32.Parse(dReader["accomodationDate"].ToString()),
                                     Int32.Parse(dReader["checkOutDate"].ToString()), Int32.Parse(dReader["roomNumber"].ToString()),
                                     Boolean.Parse(dReader["hasPet"].ToString()));
                                 break;
                             }
-                        case "Group of Clients":
+                        case 2:
+                       // case "Group of Clients":
                             {
                                 client = new GroupOfClients(Int32.Parse(dReader["passportData"].ToString()), Int32.Parse(dReader["accomodationDate"].ToString()),
                                     Int32.Parse(dReader["checkOutDate"].ToString()), Int32.Parse(dReader["roomNumber"].ToString()),
                                     Int32.Parse(dReader["amountOfPeople"].ToString()));
                                 break;
                             }
-                        case "Family":
+                        case 3:
+                        //case "Family":
                             {
                                 client = new CoupleClients(Int32.Parse(dReader["passportData"].ToString()), Int32.Parse(dReader["accomodationDate"].ToString()),
                                     Int32.Parse(dReader["checkOutDate"].ToString()), Int32.Parse(dReader["roomNumber"].ToString()),

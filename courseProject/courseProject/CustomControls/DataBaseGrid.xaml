@@ -16,5 +16,6 @@
         <Button x:Name="DiscBtn" Content="ClearBtn" HorizontalAlignment="Left" Margin="613,160,0,0" VerticalAlignment="Top" Width="86" Height="26" Click="DiscBtn_Click" Grid.Row="1"/>
         <Button x:Name="Select2Bnt" Content="Select Hotels" HorizontalAlignment="Left" Margin="245,160,0,0" VerticalAlignment="Top" Width="90" Height="26" Click="Select2Bnt_Click" Grid.Row="1"/>
         <Label x:Name="dbStatusLbl" Content="" HorizontalAlignment="Left" Margin="24,25,0,0" VerticalAlignment="Top" Height="27" Width="214" RenderTransformOrigin="1.017,1.663"/>
+        <Button x:Name="ShowList" Content="ShowList" HorizontalAlignment="Left" Margin="340,160,0,0" Grid.Row="1" VerticalAlignment="Top" Width="93" Height="26" Click="ShowList_Click"/>
     </Grid>
 </UserControl>

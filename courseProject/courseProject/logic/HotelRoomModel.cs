@@ -9,20 +9,20 @@ namespace courseProject.logic
     class HotelRoomModel
     {
         private List<HotelRoom> mHotelRoomList;
-        private List<HotelRoom> HotelRoomList 
+        public List<HotelRoom> HotelRoomList 
         { 
             get
              { 
                 return mHotelRoomList; 
-             } 
-            set{}
+             }
+            set { mHotelRoomList = value;  }
         }
 
         public HotelRoomModel() { }
 
         public HotelRoomModel(List<HotelRoom> hotelRoomList) 
         {
-            hotelRoomList = HotelRoomList;
+            HotelRoomList = hotelRoomList;
         }
 
 
