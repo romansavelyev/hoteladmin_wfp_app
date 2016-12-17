@@ -13,8 +13,8 @@ namespace courseProject.logic
 {
     class DBcontroler
     {
-        private static string mConnStr = "SERVER=localhost;DATABASE=test;UID=root;PASSWORD=root;";
-        private MySqlConnection mConn = new MySqlConnection(mConnStr);
+        public static string connStr = "SERVER=localhost;DATABASE=test;UID=root;PASSWORD=root;";
+        public MySqlConnection mConn = new MySqlConnection(connStr);
 
         private List<HotelRoom> mHotelRoomList = new List<HotelRoom>();
         private List<Client> mClientList = new List<Client>();
@@ -26,6 +26,7 @@ namespace courseProject.logic
             try
             {
                 mConn.Open();
+                MessageBox.Show("con");
             }
             catch (Exception ex)
             {

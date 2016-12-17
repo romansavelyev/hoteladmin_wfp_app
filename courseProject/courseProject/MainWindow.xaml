@@ -7,13 +7,15 @@
         xmlns:CustomControls="clr-namespace:courseProject.CustomControls" x:Class="courseProject.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="468" Width="757">
-    <Grid Margin="0,0,2,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="14*"/>
-            <ColumnDefinition Width="726*"/>
-            <ColumnDefinition Width="7*"/>
-        </Grid.ColumnDefinitions>
-        <CustomControls:DataBaseGrid HorizontalAlignment="Left" Height="387" Width="747" RenderTransformOrigin="0.427,0.524" Grid.ColumnSpan="3" VerticalAlignment="Top" Margin="0,50,0,0"/>
-        <Menu HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="747" Grid.ColumnSpan="3"/>
+    <Grid>
+
+        <Menu x:Name="HeaderMenu" Height="47" VerticalAlignment="Top" Background="Gray">
+            <Button x:Name="SelectDB_Button" Background="{x:Null}" Height="41" Width="152" BorderBrush="{x:Null}" Foreground="WhiteSmoke" Content="Show DataBase" BorderThickness="0" Click="SelectDB_Button_Click"/>
+            <Button x:Name="AddElement_Button" Background="{x:Null}" Height="41" Width="152" BorderBrush="{x:Null}" Foreground="WhiteSmoke" Content="Add element" BorderThickness="0" Click="AddElement_Button_Click"/>
+            <Button x:Name="Delete_Button" Background="{x:Null}" Height="41" Width="152" BorderBrush="{x:Null}" Foreground="WhiteSmoke" Content="Delete" BorderThickness="0" Margin="0px" Click="Delete_Button_Click"/>
+        </Menu>
+        <ContentControl HorizontalAlignment="Left" Margin="11,52,0,0" VerticalAlignment="Top" Height="375" Width="729" x:Name="contentControl">
+        </ContentControl>
+
     </Grid>
 </Window>

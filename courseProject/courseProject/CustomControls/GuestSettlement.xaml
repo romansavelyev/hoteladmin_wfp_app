@@ -4,11 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:courseProject.CustomControls"
-             mc:Ignorable="d" d:DesignWidth="651" Height="359">
+             mc:Ignorable="d" Height="359" Width="728">
     <Grid Margin="-74,0,0,0">
-        <TabControl x:Name="PostTabControl" HorizontalAlignment="Left" Height="354" VerticalAlignment="Top" Width="705" Margin="10,0,0,0">
+        <TabControl x:Name="PostTabControl" HorizontalAlignment="Left" Height="339" VerticalAlignment="Top" Width="708" Margin="84,10,0,0">
             <TabItem Header="Room" Width="75px" Margin="0 0 0 0">
-                <Grid Background="#FFE5E5E5" Margin="0,0,0,-16">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-9,-16">
                     <Grid.RowDefinitions >
                         <RowDefinition Height="311*"/>
                         <RowDefinition Height="31*"/>
@@ -21,29 +21,28 @@
                     <!--<CustomElements:LabeledTextBox x:Name="PostFilm_NameInput" 
                                                        Margin="10,169,4,103"
                                                        Label="Director:"/>-->
-                    <Label x:Name="roomSettle_Clients_Label" Content="Clients:" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="61"/>
-                    <Label x:Name="roomSettle_RoomClass_Label" Content="Room Class:" HorizontalAlignment="Left" Margin="11,47,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
-                    <TextBox x:Name="roomSettle_RoomClass_TextBox" HorizontalAlignment="Left" Height="23" Margin="10,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
-                    <Label x:Name="roomSettle_NumOfPeople_Label" Content="Amount people:" HorizontalAlignment="Left" Margin="11,101,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-4.15" Height="26" Width="95"/>
-                    <Label x:Name="roomSettle_PriceForRoom_Label" Content="Price for room:" HorizontalAlignment="Left" Margin="11,150,0,0" VerticalAlignment="Top" Height="26" Width="88" RenderTransformOrigin="0.507,1.581"/>
-                    <TextBox x:Name="roomSettle_NumOfPeople_TextBox" HorizontalAlignment="Left" Height="23" Margin="11,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
-                    <TextBox x:Name="roomSettle_PriceForRoom_TextBox" HorizontalAlignment="Left" Height="23" Margin="11,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,-0.486"/>
-                    <Label x:Name="roomSettle_RoomType_Label" Content="Room Type:" HorizontalAlignment="Left" Margin="11,199,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
-                    <ComboBox x:Name="roomSettle_RoomType_ComboBox" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="146" Height="22">
+                    <Label x:Name="roomSettle_RoomClass_Label" Content="Room Class:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
+                    <TextBox x:Name="roomSettle_RoomClass_TextBox" HorizontalAlignment="Left" Height="23" Margin="9,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+                    <Label x:Name="roomSettle_NumOfPeople_Label" Content="Amount people:" HorizontalAlignment="Left" Margin="11,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-4.15" Height="26" Width="95"/>
+                    <Label x:Name="roomSettle_PriceForRoom_Label" Content="Price for room:" HorizontalAlignment="Left" Margin="11,109,0,0" VerticalAlignment="Top" Height="26" Width="88" RenderTransformOrigin="0.507,1.581"/>
+                    <TextBox x:Name="roomSettle_NumOfPeople_TextBox" HorizontalAlignment="Left" Height="23" Margin="9,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+                    <TextBox x:Name="roomSettle_PriceForRoom_TextBox" HorizontalAlignment="Left" Height="23" Margin="11,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,-0.486"/>
+                    <Label x:Name="roomSettle_RoomType_Label" Content="Room Type:" HorizontalAlignment="Left" Margin="11,153,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
+                    <ComboBox x:Name="roomSettle_RoomType_ComboBox" HorizontalAlignment="Left" Margin="11,179,0,0" VerticalAlignment="Top" Width="146" Height="22">
                         <ComboBoxItem HorizontalAlignment="Center">Simple Apartment</ComboBoxItem>
                         <ComboBoxItem HorizontalAlignment="Center">Family Apartment</ComboBoxItem>
                         <ComboBoxItem HorizontalAlignment="Center">Loft Apartment</ComboBoxItem>
                     </ComboBox>
-                    <CheckBox x:Name="roomSettle_VIP_CheckBox" Content="VIP" Grid.Column="1" HorizontalAlignment="Left" Margin="11,27,0,0" VerticalAlignment="Top" Height="15" Width="37"/>
-                    <CheckBox x:Name="roomSettle_ChildRoom_CheckBox" Content="Child Room" Grid.Column="1" HorizontalAlignment="Left" Margin="158,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.328,0.891" Height="15" Width="82"/>
+                    <CheckBox x:Name="roomSettle_VIP_CheckBox" Content="VIP" Grid.Column="1" HorizontalAlignment="Left" Margin="11,27,0,0" VerticalAlignment="Top" Height="15" Width="37" IsEnabled="False"/>
+                    <CheckBox x:Name="roomSettle_ChildRoom_CheckBox" Content="Child Room" Grid.Column="1" HorizontalAlignment="Left" Margin="158,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.328,0.891" Height="15" Width="82" IsEnabled="False"/>
                     <Label x:Name="roomSettle_PriceForDiner_Label1" Content="Price for diner:" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="99"/>
-                    <TextBox x:Name="roomSettle_PriceForDiner_TextBox" HorizontalAlignment="Left" Height="23" Margin="10,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Grid.Column="1"/>
+                    <TextBox x:Name="roomSettle_PriceForDiner_TextBox" HorizontalAlignment="Left" Height="23" Margin="0,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" Grid.Column="1" IsEnabled="False"/>
                     <Label x:Name="roomSettle_PriceForVIP_Label1" Content="Price for VIP:" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="99"/>
-                    <TextBox x:Name="roomSettle_PriceForVIP_TextBox" HorizontalAlignment="Left" Height="23" Margin="11,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Grid.Column="1"/>
+                    <TextBox x:Name="roomSettle_PriceForVIP_TextBox" HorizontalAlignment="Left" Height="23" Margin="0,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Grid.Column="1" IsEnabled="False"/>
                     <Label x:Name="roomSettle_NumOfBeds_Label1" Content="Number of beds:" HorizontalAlignment="Left" Margin="158,47,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="99"/>
-                    <TextBox x:Name="roomSettle_NumOfBeds_TextBox" HorizontalAlignment="Left" Height="23" Margin="158,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Grid.Column="1"/>
+                    <TextBox x:Name="roomSettle_NumOfBeds_TextBox" HorizontalAlignment="Left" Height="23" Margin="158,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Grid.Column="1" IsEnabled="False"/>
                     <Label x:Name="roomSettle_PriceForChildRoom_Label1" Content="Price for child room:" HorizontalAlignment="Left" Margin="158,101,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="125"/>
-                    <TextBox x:Name="roomSettle_PriceForChildRoom_TextBox" HorizontalAlignment="Left" Height="23" Margin="158,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Grid.Column="1"/>
+                    <TextBox x:Name="roomSettle_PriceForChildRoom_TextBox" HorizontalAlignment="Left" Height="23" Margin="158,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Grid.Column="1" IsEnabled="False"/>
                     <Separator HorizontalAlignment="Left" Height="18" Margin="162,154,0,0" VerticalAlignment="Top" Width="308" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
                         <Separator.RenderTransform>
                             <TransformGroup>
@@ -65,13 +64,15 @@
                         </Separator.RenderTransform>
                     </Separator>
                     <Separator Grid.Column="1" HorizontalAlignment="Left" Height="37" Margin="10,171,0,0" VerticalAlignment="Top" Width="100"/>
-                    <Label x:Name="roomSettle_NumOfRooms_Label" Content="Number of beds:" HorizontalAlignment="Left" Margin="10,216,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="99"/>
-                    <TextBox x:Name="roomSettle_NumOfRoons_TextBox" HorizontalAlignment="Left" Height="23" Margin="11,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" Grid.Column="1"/>
-                    <Button x:Name="roomSettle_ok_Button" Content="OK" HorizontalAlignment="Left" Margin="36,264,0,0" VerticalAlignment="Top" Width="163" Height="37" Grid.Column="2"/>
-                    <ListBox x:Name="roomSettle_Clients_ListBox" Grid.Column="2" HorizontalAlignment="Left" Height="224" Margin="36,35,0,0" VerticalAlignment="Top" Width="164"/>
+                    <Label x:Name="roomSettle_NumOfRooms_Label" Content="Number of rooms:" HorizontalAlignment="Left" Margin="0,216,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="110"/>
+                    <TextBox x:Name="roomSettle_NumOfRooms_TextBox" HorizontalAlignment="Left" Height="23" Margin="0,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Grid.Column="1" IsEnabled="False"/>
+                    <Button x:Name="roomSettle_LoftApart_Button" Content="Insert to LoftApart" HorizontalAlignment="Left" Margin="22,16,0,0" VerticalAlignment="Top" Width="163" Height="36" Grid.Column="2" Click="roomSettle_LoftApart_Button_Click" RenderTransformOrigin="0.417,2" IsEnabled="False"/>
+                    <Button x:Name="roomSettle_SimpleApart_Button" Content="Insert to SimpleApart" HorizontalAlignment="Left" Margin="21,59,0,0" VerticalAlignment="Top" Width="163" Height="35" Grid.Column="2" Click="roomSettle_SimpleApart_Button_Click" RenderTransformOrigin="0.417,2" IsEnabled="False"/>
+                    <Button Content="Choose " HorizontalAlignment="Left" Margin="43,272,0,5" Width="75" Click="Button_Click"/>
+                    <Button x:Name="roomSettle_Family_Button" Content="Insert to FamilyApart" HorizontalAlignment="Left" Margin="20,101,0,0" VerticalAlignment="Top" Width="163" Height="35" Grid.Column="2" Click="roomSettle_Family_Button_Click" RenderTransformOrigin="0.417,2" IsEnabled="False"/>
                 </Grid>
             </TabItem>
-            <TabItem  Header="Client" Width="75px" >
+            <TabItem  Header="Client" Width="75px" Margin="1,-5,-1,3" >
                 <Grid Background="#FFE5E5E5" Margin="0,0,0,3">
                     <Grid.RowDefinitions>
                         <RowDefinition/>
@@ -81,23 +82,20 @@
                         <ColumnDefinition Width="457*"/>
                         <ColumnDefinition Width="188*"/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="clientSettle_SelectedRooms_Label" Content="Selected rooms:" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="94"/>
-                    <Label x:Name="clientSettle_AccomodationDate_Label" Content="Accomodation date:" HorizontalAlignment="Left" Margin="8,19,0,0" VerticalAlignment="Top" Height="24" Width="122" Grid.Column="1"/>
-                    <DatePicker x:Name="clientSettle_AccomodationDate_DatePicker" HorizontalAlignment="Right" Margin="0,46,365,0" VerticalAlignment="Top" Width="118" Height="24" Grid.Column="1" RenderTransformOrigin="-1.772,-2.167"/>
-                    <Button x:Name="clientSettle_Ok_Button" Content="OK" HorizontalAlignment="Left" Margin="30,264,0,0" VerticalAlignment="Top" Width="164" Height="37" Grid.Column="2"/>
-                    <Label x:Name="clientSettle_CheckOutDate_Label" Content="CheckOut date:" HorizontalAlignment="Left" Margin="7,67,0,0" VerticalAlignment="Top" Height="26" Width="90" Grid.Column="1"/>
-                    <DatePicker x:Name="clientSettle_CheckOutDate_DatePicker" HorizontalAlignment="Right" Margin="0,93,365,0" VerticalAlignment="Top" Width="118" Height="24" Grid.Column="1" RenderTransformOrigin="-1.772,-2.167"/>
-                    <Label x:Name="clientSettle_CheckOutDate_Label_Copy" Content="Passport data:" HorizontalAlignment="Left" Margin="9,117,0,0" VerticalAlignment="Top" Height="26" Width="90" Grid.Column="1"/>
-                    <TextBox x:Name="clientSettle_PassportDat_TextBox" HorizontalAlignment="Left" Height="23" Margin="10,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                    <Label x:Name="clientSettle_RoomNumber_Label" Content="Room number:" HorizontalAlignment="Left" Margin="8,164,0,0" VerticalAlignment="Top" Height="26" Width="90" Grid.Column="1"/>
-                    <TextBox x:Name="clientSettle_RoomNumber_TextBox" HorizontalAlignment="Left" Height="23" Margin="10,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                    <ComboBox x:Name="clientSettle_ClientType_ComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="8,239,0,0" VerticalAlignment="Top" Width="120" Height="22">
+                    <Label x:Name="clientSettle_AccomodationDate_Label" Content="Accomodation date:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="24" Width="122" Grid.Column="1" Margin="0,10,0,0"/>
+                    <Button x:Name="clientSettle_SingleClient_Button" Content="Insert SingleClient" HorizontalAlignment="Left" Margin="29,14,0,0" VerticalAlignment="Top" Width="164" Height="37" Grid.Column="2" Click="clientSettle_SingleClient_Button_Click" IsEnabled="False"/>
+                    <Label x:Name="clientSettle_CheckOutDate_Label" Content="CheckOut date:" HorizontalAlignment="Left" Margin="0,58,0,0" VerticalAlignment="Top" Height="26" Width="90" Grid.Column="1"/>
+                    <Label x:Name="clientSettle_CheckOutDate_Label_Copy" Content="Passport data:" HorizontalAlignment="Left" Margin="0,105,0,0" VerticalAlignment="Top" Height="26" Width="90" Grid.Column="1"/>
+                    <TextBox x:Name="clientSettle_PassportDat_TextBox" HorizontalAlignment="Left" Height="23" Margin="4,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+                    <Label x:Name="clientSettle_RoomNumber_Label" Content="Room number:" HorizontalAlignment="Left" Margin="0,149,0,0" VerticalAlignment="Top" Height="26" Width="90" Grid.Column="1"/>
+                    <TextBox x:Name="clientSettle_RoomNumber_TextBox" HorizontalAlignment="Left" Height="23" Margin="4,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+                    <ComboBox x:Name="clientSettle_ClientType_ComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="4,224,0,0" VerticalAlignment="Top" Width="120" Height="22">
                         <ComboBoxItem HorizontalAlignment="Center">Single Client</ComboBoxItem>
                         <ComboBoxItem HorizontalAlignment="Center">Group of Clients</ComboBoxItem>
                         <ComboBoxItem HorizontalAlignment="Center">Family</ComboBoxItem>
                     </ComboBox>
-                    <Label x:Name="clientSettle_ClientType_Label" Content="Client type:" HorizontalAlignment="Left" Margin="9,213,0,0" VerticalAlignment="Top" Height="26" Width="90" Grid.Column="1"/>
-                    <Separator Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="22" Margin="21,157,0,0" VerticalAlignment="Top" Width="277" RenderTransformOrigin="0.5,0.5">
+                    <Label x:Name="clientSettle_ClientType_Label" Content="Client type:" HorizontalAlignment="Left" Margin="0,198,0,0" VerticalAlignment="Top" Height="26" Width="90" Grid.Column="1"/>
+                    <Separator Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="22" Margin="71,150,0,0" VerticalAlignment="Top" Width="277" RenderTransformOrigin="0.5,0.5">
                         <Separator.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -107,12 +105,12 @@
                             </TransformGroup>
                         </Separator.RenderTransform>
                     </Separator>
-                    <CheckBox x:Name="clientSettle_Pet_CheckBox" Content="Pet" Grid.Column="1" HorizontalAlignment="Left" Margin="198,46,0,0" VerticalAlignment="Top" Height="15" Width="37"/>
-                    <CheckBox x:Name="clientSettle_Childrens_CheckBox" Content="Childrens" Grid.Column="1" HorizontalAlignment="Left" Margin="369,46,0,0" VerticalAlignment="Top" Height="15" Width="69"/>
-                    <Label x:Name="clientSettle_NumberOfPeople_Label" Content="Passport data:" HorizontalAlignment="Left" Margin="176,82,0,0" VerticalAlignment="Top" Height="26" Width="90" Grid.Column="1" RenderTransformOrigin="0.478,1.692"/>
-                    <Label x:Name="clientSettle_NumberOfChildren_Label" Content="Number of children:" HorizontalAlignment="Left" Margin="365,82,0,0" VerticalAlignment="Top" Height="26" Width="125" Grid.Column="1"/>
-                    <TextBox x:Name="clientSettle_NumberOfChildren_TextBox" HorizontalAlignment="Left" Height="23" Margin="365,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                    <Separator HorizontalAlignment="Left" Height="22" Margin="202,157,0,0" VerticalAlignment="Top" Width="273" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+                    <CheckBox x:Name="clientSettle_Pet_CheckBox" Content="Pet" Grid.Column="1" HorizontalAlignment="Left" Margin="262,40,0,0" VerticalAlignment="Top" Height="15" Width="37" IsEnabled="False"/>
+                    <CheckBox x:Name="clientSettle_Childrens_CheckBox" Content="Childrens" Grid.Column="1" HorizontalAlignment="Left" Margin="404,40,0,0" VerticalAlignment="Top" Height="15" Width="69" IsEnabled="False"/>
+                    <Label x:Name="clientSettle_NumberOfPeople_Label" Content="Number of people:" HorizontalAlignment="Left" Margin="222,71,0,0" VerticalAlignment="Top" Height="26" Width="120" Grid.Column="1" RenderTransformOrigin="0.478,1.692"/>
+                    <Label x:Name="clientSettle_NumberOfChildren_Label" Content="Number of children:" HorizontalAlignment="Left" Margin="372,71,0,0" VerticalAlignment="Top" Height="26" Width="125" Grid.Column="1"/>
+                    <TextBox x:Name="clientSettle_NumberOfChildren_TextBox" HorizontalAlignment="Left" Height="23" Margin="377,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" IsEnabled="False"/>
+                    <Separator HorizontalAlignment="Left" Height="22" Margin="219,147,0,0" VerticalAlignment="Top" Width="273" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
                         <Separator.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -122,9 +120,13 @@
                             </TransformGroup>
                         </Separator.RenderTransform>
                     </Separator>
-                    <TextBox x:Name="clientSettle_NumberOfPeople_TextBox" HorizontalAlignment="Left" Height="23" Margin="176,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                    <Separator Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="189,66,0,0" VerticalAlignment="Top" Width="120"/>
-                    <ListBox Grid.Column="2" HorizontalAlignment="Left" Height="224" Margin="30,35,0,0" VerticalAlignment="Top" Width="164"/>
+                    <TextBox x:Name="clientSettle_NumberOfPeople_TextBox" HorizontalAlignment="Left" Height="23" Margin="222,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" IsEnabled="False"/>
+                    <Separator Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="222,55,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Button Grid.ColumnSpan="2" Content="Choose " HorizontalAlignment="Left" Margin="129,224,0,0" VerticalAlignment="Top" Width="73" Height="22" Click="Button_Click_1"/>
+                    <Button x:Name="clientSettle_GroupOfClients_Button" Content="Insert GroupOfClients" HorizontalAlignment="Left" Margin="30,59,0,0" VerticalAlignment="Top" Width="164" Height="37" Grid.Column="2" Click="clientSettle_GroupOfClients_Button_Click" IsEnabled="False"/>
+                    <Button x:Name="clientSettle_Family_Button" Content="Insert Family" HorizontalAlignment="Left" Margin="30,104,0,0" VerticalAlignment="Top" Width="164" Height="37" Grid.Column="2" Click="clientSettle_Family_Button_Click" IsEnabled="False"/>
+                    <TextBox x:Name="clientSettle_CheckInDate_TextBox" HorizontalAlignment="Left" Height="23" Margin="6,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+                    <TextBox x:Name="clientSettle_CheckOutDate_TextBox" HorizontalAlignment="Left" Height="23" Margin="6,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
 
                 </Grid>
             </TabItem>

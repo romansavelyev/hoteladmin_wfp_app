@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data;
 using MySql.Data.MySqlClient;
+using courseProject.CustomControls;
 
 namespace courseProject
 {
@@ -22,8 +23,23 @@ namespace courseProject
         public MainWindow()
         {
             InitializeComponent();
+            contentControl.Content = new DataBaseGrid();
         }
 
+        private void SelectDB_Button_Click(object sender, RoutedEventArgs e)
+        {
+            contentControl.Content = new DataBaseGrid();
+        }
+
+        private void AddElement_Button_Click(object sender, RoutedEventArgs e)
+        {
+            contentControl.Content = new GuestSettlement();
+        }
+
+        private void Delete_Button_Click(object sender, RoutedEventArgs e)
+        {
+            contentControl.Content = new DeletePageControl();
+        }
     
     }
 }

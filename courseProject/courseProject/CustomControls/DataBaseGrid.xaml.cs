@@ -24,7 +24,7 @@ namespace courseProject.CustomControls
     {
         private ClientModel mClientM;
         private HotelRoomModel mHotelRoomM;
-        private DataTable dt = new DataTable();
+    //    private DataTable dt = new DataTable();
         private DBcontroler mDB = new DBcontroler();
        // private Settlement mSettle;
 
@@ -33,7 +33,7 @@ namespace courseProject.CustomControls
         {
             InitializeComponent();
         }
-        public  static string connStr = "SERVER=localhost;DATABASE=test;UID=root;PASSWORD=root;";
+        public  static string connStr = "SERVER=localhost;DATABASE=HotelDB;UID=root;PASSWORD=root;";
         public MySqlConnection con = new MySqlConnection(connStr);
        
 
@@ -41,10 +41,10 @@ namespace courseProject.CustomControls
         {
             try
             {
-                mDB.DBconnect();
-               // con.Open();
+                //mDB.DBconnect();
+                con.Open();
+             
                 dbStatusLbl.Content = "Connection is open now!";
-                //MessageBox.Show("Connection is open now!");
             }
             catch(Exception ex)
             {
@@ -53,11 +53,12 @@ namespace courseProject.CustomControls
 
         }
 
-        private void ShowBtn_Click(object sender, RoutedEventArgs e)
+        private void SimpleApartBtn_Click(object sender, RoutedEventArgs e)
         {
+            DataTable dt = new DataTable();
             try
             {
-                MySqlCommand cmd = new MySqlCommand("select * from test.people", con);
+                MySqlCommand cmd = new MySqlCommand("select * from HotelDB.SimpleApart ", con);
                 dt.Load(cmd.ExecuteReader());
                 dtGrid.DataContext = dt;
             }
@@ -67,18 +68,20 @@ namespace courseProject.CustomControls
             }
         }
 
-        private void DiscBtn_Click(object sender, RoutedEventArgs e)
+        private void ClearBtn_Click(object sender, RoutedEventArgs e)
         {
-            mDB.BDdisconnect();
-            dbStatusLbl.Content = "Connection is closed!";
-       
+            DataTable dt = new DataTable();
+            dtGrid.DataContext = null;
+            dtGrid.Items.Refresh();
+            dt.Clear();
         }
 
-        private void Select2Bnt_Click(object sender, RoutedEventArgs e)
+        private void LoftApartBtn_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                MySqlCommand cmd = new MySqlCommand("select * from test.Hotels", con);
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand("select * from HotelDB.LoftApart order by id", con);
                 dt.Load(cmd.ExecuteReader());
                 dtGrid.DataContext = dt;
             }
@@ -96,6 +99,72 @@ namespace courseProject.CustomControls
             foreach(var client in mClientM.ClientList)
             {
                 System.Diagnostics.Debug.WriteLine(client.RoomNumber);
+            }
+        }
+
+        private void FamilyApartBtn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand("select * from HotelDB.FamilyApart ", con);
+                dt.Load(cmd.ExecuteReader());
+                dtGrid.DataContext = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void DiscBtn_Click(object sender, RoutedEventArgs e)
+        {
+            con.Close();
+            dbStatusLbl.Content = "Connection is closed!";
+        }
+
+        private void SingleClientBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("select * from HotelDB.SingleClient ", con);
+                dt.Load(cmd.ExecuteReader());
+                dtGrid.DataContext = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void GroupOfClientsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("select * from HotelDB.GroupOfClients ", con);
+                dt.Load(cmd.ExecuteReader());
+                dtGrid.DataContext = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void FamilyBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("select * from HotelDB.Family ", con);
+                dt.Load(cmd.ExecuteReader());
+                dtGrid.DataContext = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -8,11 +8,6 @@ namespace courseProject
 {
    abstract class Client : Hotel
     {
-       //private int mPassportData;
-       //private int mAccomodationDate;
-       //private int mCheckOutDate;
-       //private int mRoomNumber;
-
        public Client(){ }
 
        public Client(int passportData, int accomodationDate, int checkOutDate, int roomNumber)
@@ -22,8 +17,6 @@ namespace courseProject
            checkOutDate = CheckOutDate;
            roomNumber = RoomNumber;
        }
-
-
        public virtual double showAmoutOfMoney() { return AmountOfMoney; }
        public int PassportData { get; set; }
        public double AmountOfMoney { get; set; }

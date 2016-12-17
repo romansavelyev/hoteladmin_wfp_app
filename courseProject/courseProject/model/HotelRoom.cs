@@ -8,10 +8,6 @@ namespace courseProject
 {
    abstract class HotelRoom : Hotel
     {       
-        //private string mRoomClass;
-        //private int mAmountOfPeople;
-        //private double mPriceForRoom;
-
         public HotelRoom() {}
 
         public HotelRoom(string roomClass, int amountOfPeople, double priceForRoom)
@@ -20,7 +16,6 @@ namespace courseProject
             amountOfPeople = AmountOfPeople;
             priceForRoom = PriceForRoom;
         }
-
         public string RoomClass { set; get; }
         public int AmountOfPeople { set; get; }
         public double PriceForRoom { set; get; }

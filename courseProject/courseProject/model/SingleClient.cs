@@ -15,9 +15,7 @@ namespace courseProject
             hasPet = HasPet;
         }
 
-
         public bool HasPet { set; get; }
-
 
         public override double showAmoutOfMoney() { return AmountOfMoney; }
     }

@@ -59,6 +59,9 @@
     <Compile Include="CustomControls\DataBaseGrid.xaml.cs">
       <DependentUpon>DataBaseGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\DeletePageControl.xaml.cs">
+      <DependentUpon>DeletePageControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\GuestSettlement.xaml.cs">
       <DependentUpon>GuestSettlement.xaml</DependentUpon>
     </Compile>
@@ -73,6 +76,10 @@
     <Compile Include="model\GroupOfClients.cs" />
     <Compile Include="model\SingleClient.cs" />
     <Page Include="CustomControls\DataBaseGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\DeletePageControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
